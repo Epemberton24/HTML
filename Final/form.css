@@ -1,0 +1,12 @@
+form { background-color: #EAEAEA;
+       font-family: Arial, sans-serif;
+       width: 350px; padding: 10px; }
+label { display: block;
+        margin-top: 20px; }
+input { display: block;
+        margin-bottom: 20px; }
+textarea { display: block; margin-top: 10px; }
+input[type="submit"] { margin-left: 110px; }
+/*
+this will manipulate the form, lable, input, and textarea elements. 
+*/	

@@ -1,0 +1,42 @@
+
+table.sport {
+    border:1px solid grey;
+}
+
+/*
+this is used to manipulate the sports table element.
+*/
+table.sport td {
+    padding:10px;
+    background-color:#FA4616;
+    color: white;
+    text-align: center;
+}
+/*
+this edits the body.
+*/
+
+body{
+	background-color: #0021A5;
+font-family: Arial, Halvetica ,sans-serif;
+	
+}
+header {
+	background-color: blue	; color: black;
+	font-size: 150%; padding: 10px 10px 10px 155px;
+	height: 130px;
+	 background-repeat: no-repeat;
+	background-image: url(images/Gator.jpg);	
+}
+h1{
+	color:#FA4616;
+	
+}
+footer {font-size: 70%; text-align: center; padding: 10px;
+background-color: #FA4616	; clear: both;
+}
+/*
+https://floridagators.com/roster.aspx?roster=434&path=basketball-men
+
+the link above is where I found the roster for the mens basketball team.
+*/

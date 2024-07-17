@@ -1,0 +1,202 @@
+/*
+The purpose of this css file was to create a 
+two column Layout for my final project.
+Elijah Pemberton
+4/4/19
+*/
+
+
+
+
+*{box-sizing: border-box;}
+body{
+	background-color: black;
+	
+font-family: Arial, Halvetica ,sans-serif;
+
+	
+}
+
+#warpper{margin: 0 auto; width: 80%; min-width: 940px;
+background-color: #B3C7E6; color: #000066;
+}
+
+/*
+this is to manipulate the everything inside the header element.
+*/
+header {
+	background-color: #879250	; color: black;
+	font-size: 150%; padding: 10px 10px 10px 10px;
+	height: 140px;
+	 background-repeat: no-repeat;
+	background-image: url(images/UNSC1.png);	
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+	table.kids {
+    border:1px solid black;
+}
+
+/*
+this is used to manipulate the sports table element.
+*/
+table.kids td {
+    padding:10px;
+    background-color:green;
+    color: white;
+    text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+
+
+/*
+this is to manipulate the everything inside the nav element.
+*/
+nav {float: right; width: 150px; font-weight: bold;
+letter-spacing: 0.1em;
+padding: 5px 5px;
+background-color: black;
+}
+
+/*
+this is to manipulate the everything inside the main element.
+*/
+main {background-color: #3E3D50; color: #99d21b;
+padding: 10px 20px  ; overflow: auto; display: block;
+}
+
+/*
+this is to manipulate the everything inside the footer element.
+*/
+footer {font-size: 70%; text-align: center; padding: 20px ;
+background-color: #99d21b	; clear: both; overflow: auto;
+}
+
+@import url(print-style.css) print;
+
+
+h2 {color: #99d21b;
+font-family: Arial, sans-serif;
+}
+/*
+this will cause everything under to floatto the right of the website.
+*/
+#floatright {float: right; margin: 10px;} 
+
+
+
+nav ul {list-style-type: none; margin: 0; padding: 0; }
+
+/*
+this creates the squares that the nav links will be inside of.
+*/
+nav a { text-decoration: none; padding: 20px; display: block;
+        background-color: #8ea72f	 ;
+        border-bottom: 3px solid black;
+		border-top: 3px solid black;
+		border-left: 2px solid black;
+		border-right:1px solid black;
+		
+}
+
+/*
+this is to show the user that the the links work as well as show what ones they have already used..
+*/
+nav a:link { color: #50FFB5 }
+nav a:visited { color: #EAEAEA; }
+nav a:hover { color: #6c8d71;
+background-color: green; }
+			  
+
+/*
+this is for phone users.
+*/
+@media only screen and (max-width: 768px) {
+     h1, h2 { font-size: 100%; }
+     span { font-size: 80%; }
+     figure { display: none;}
+     nav, nav ul, nav li { padding: 0; }
+     nav li { display: block; }
+     nav a { display: block;
+             padding: 0.5em 0;
+             border-bottom: 2px ridge #00005D; }
+}
+
+
+
+
+
+
+/*bottom is the print stylesheet */	
+@media print {
+	*{
+		background: transparent !important;
+		color: #000  !important;
+		box-shadow: none  !important;
+		text-shadow: none  !important;
+	}
+	
+	.main-nav,
+	.sidebar,
+	.main-footer 
+	img {
+		display: none;
+	}
+	.main-header {
+	 margin-bottom: 0;
+     border: none;
+	text-align: center;	
+		
+	}
+	a[href^="http"]::after
+	{
+		content: "[" attr(href)"]";
+	     color: blue;	
+	}
+	
+	@page{
+		margin:.5cm;
+		
+	}
+	@page : first{
+		margin-top: 2cm;
+		
+	}
+	
+	/*avoids breaking of a page from either a list or a header */	
+	h2,ul {
+		page-break-after: avoid; 
+		
+	}
+	p, ul {
+		orphans:3;
+		widows:3;
+		font-size: 11pt;
+	}
+}
+
+
+
+
+
+ 
